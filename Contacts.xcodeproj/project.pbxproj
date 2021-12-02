@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A548B08275896A900A829EF /* showView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A548B07275896A900A829EF /* showView.swift */; };
 		4B19334B2751E35700B5EF84 /* ContactsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B19334A2751E35700B5EF84 /* ContactsApp.swift */; };
 		4B19334D2751E35700B5EF84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B19334C2751E35700B5EF84 /* ContentView.swift */; };
 		4B19334F2751E36000B5EF84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B19334E2751E36000B5EF84 /* Assets.xcassets */; };
 		4B1933522751E36000B5EF84 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B1933512751E36000B5EF84 /* Preview Assets.xcassets */; };
+		4B19335B2751E65000B5EF84 /* addView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B19335A2751E65000B5EF84 /* addView.swift */; };
+		4B19337A275207C900B5EF84 /* editView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B193379275207C900B5EF84 /* editView.swift */; };
+		574CE344275717B8009D0120 /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574CE343275717B8009D0120 /* InformationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A548B07275896A900A829EF /* showView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showView.swift; sourceTree = "<group>"; };
 		4B1933472751E35700B5EF84 /* Contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B19334A2751E35700B5EF84 /* ContactsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsApp.swift; sourceTree = "<group>"; };
 		4B19334C2751E35700B5EF84 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4B19334E2751E36000B5EF84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B1933512751E36000B5EF84 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4B1933532751E36000B5EF84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B19335A2751E65000B5EF84 /* addView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addView.swift; sourceTree = "<group>"; };
+		4B193379275207C900B5EF84 /* editView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editView.swift; sourceTree = "<group>"; };
+		574CE343275717B8009D0120 /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,10 @@
 			children = (
 				4B19334A2751E35700B5EF84 /* ContactsApp.swift */,
 				4B19334C2751E35700B5EF84 /* ContentView.swift */,
+				4A548B07275896A900A829EF /* showView.swift */,
+				4B19335A2751E65000B5EF84 /* addView.swift */,
+				4B193379275207C900B5EF84 /* editView.swift */,
+				574CE343275717B8009D0120 /* InformationView.swift */,
 				4B19334E2751E36000B5EF84 /* Assets.xcassets */,
 				4B1933532751E36000B5EF84 /* Info.plist */,
 				4B1933502751E36000B5EF84 /* Preview Content */,
@@ -138,7 +150,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				574CE344275717B8009D0120 /* InformationView.swift in Sources */,
+				4A548B08275896A900A829EF /* showView.swift in Sources */,
+				4B19335B2751E65000B5EF84 /* addView.swift in Sources */,
 				4B19334D2751E35700B5EF84 /* ContentView.swift in Sources */,
+				4B19337A275207C900B5EF84 /* editView.swift in Sources */,
 				4B19334B2751E35700B5EF84 /* ContactsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
