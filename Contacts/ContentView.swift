@@ -25,13 +25,12 @@ struct ContentView: View {
     @State private var edit: Bool = false
     @State private var add: Bool = false
     @State private var random: Bool = false
-    @State private var random_inf: Information = Information(name: "", phone: "", mail: "", birth: Date(), gender: "", height: 0, color: .black, tabletennis: true, introduction: "")
     @State private var showingAlert: Bool = false
     var body: some View {
         ZStack{
             NavigationView{
                 List{
-                    ForEach(inf_list){ data in
+                    ForEach($inf_list){ $data in
                         Button(action:{
                             self.edit = true
                         }){
@@ -39,7 +38,7 @@ struct ContentView: View {
                                 Text(data.name)
                             }
                             .sheet(isPresented: $edit){
-                                editView(inf_list: $inf_list, inf: binding(for: data), show: $edit)
+                                editView(inf_list: $inf_list, inf: $data, show: $edit)
                             }
                         }
                     }.onDelete(perform: delete)
@@ -88,12 +87,6 @@ struct ContentView: View {
     }
     func delete(at offsets: IndexSet) {
         inf_list.remove(atOffsets: offsets)
-    }
-    private func binding(for inf: Information) -> Binding<Information> {
-            guard let infIndex = inf_list.firstIndex(where: { $0.id == inf.id }) else {
-                fatalError("Can't find information in array")
-            }
-            return $inf_list[infIndex]
     }
 }
 
